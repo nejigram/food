@@ -1,0 +1,155 @@
+body{
+    font-size:12px;
+}
+p{
+    line-height:1em;
+}
+
+.fixVis {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+.fixVis_video {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+.box{
+    position:relative;
+    z-index: 1;
+}
+.main{
+    height:100vh;
+    position:relative;
+
+}
+.main .title{
+    position:relative;
+    padding-top:40%;
+}
+.main .title .txt01{
+    font-size:7em;
+}
+.main .title .text02{
+
+}
+.main .scroll{
+    position:absolute;
+    bottom:6em;
+    width:100%;
+}
+
+.scroll .mark{
+  z-index: 2;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.scroll .mark span {
+  position: absolute;
+  top: 1rem;
+  left:47.4%;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.scroll .mark span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.bk_tori{
+    background-image:url(../../../assets/images/shade/19.png);
+    background-repeat: no-repeat;
+    background-position:left bottom;
+    background-size: 20% auto;
+}
+.bk_tomato{
+    background-image:url(../../../assets/images/food/08.jpg);
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-size:auto 100%;
+    width:100%;
+    height:800px;
+    filter:contrast(70%);
+
+}
+.bk_food_07{
+    background-image:url(../../../assets/images/food/09.jpg);
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-size:auto 100%;
+    width:100%;
+    height:800px;
+    filter:contrast(70%);
+
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_text_hover{
+    position:relative;
+    background-color:#fff;
+
+}
+.img_text_hover:hover{
+    cursor:pointer;
+
+}
+.img_text_hover div{
+    opacity: 0;
+    position:absolute;
+    top:0;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:2rem;
+    font-size:1.2rem;
+}
+.img_text_hover div:hover{
+    cursor:pointer;
+
+}
+
+.pt_linelink{
+    padding-top:30%;
+}
+#title,#title2,#title3,#title4,#title5{
+    opacity: 0;
+}
+@media screen and (max-width:640px){
+
+}
