@@ -24,6 +24,7 @@ $(function(){
             $(this).find("img").addClass("opa_0_usu");
             $(this).find("div").removeClass("opa_0");
             $(this).find("div").addClass("opa_1");
+            $(".img_text_hover_text").text($(this).find("div").text());
 
         },
         function(){
