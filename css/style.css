@@ -122,6 +122,11 @@ p{
     width:100%;
 }
 
+.bk_map{
+    z-index:2;
+    position:relative;
+}
+
 .img_text_hover{
     position:relative;
     background-color:#fff;
